@@ -1,4 +1,4 @@
-package com.curso.spring.demomvc.web.controler;
+package com.curso.spring.demomvc.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

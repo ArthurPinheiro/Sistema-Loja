@@ -4,7 +4,7 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.List;
 
-@Getter
+
 @Setter
 @Entity
 @Table(name = "CARGOS")
@@ -19,4 +19,16 @@ public class Cargo extends AbstractEntity<Long> {
 
     @OneToMany(mappedBy = "cargo")
     private List<Funcionario> funcionarios;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public Departamento getDepartamento() {
+        return departamento;
+    }
+
+    public List<Funcionario> getFuncionarios() {
+        return funcionarios;
+    }
 }
