@@ -4,7 +4,6 @@ import com.curso.spring.demomvc.domain.Cargo;
 import com.curso.spring.demomvc.domain.Departamento;
 import com.curso.spring.demomvc.service.CargoService;
 import com.curso.spring.demomvc.service.DepartamentoService;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

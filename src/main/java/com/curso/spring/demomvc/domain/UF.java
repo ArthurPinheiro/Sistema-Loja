@@ -1,8 +1,5 @@
 package com.curso.spring.demomvc.domain;
 
-import lombok.Getter;
-
-@Getter
 public enum UF {
 
     AC("AC", "Acre"),
@@ -37,6 +34,22 @@ public enum UF {
 
     UF(String sigla, String descricao){
         this.sigla = sigla;
+        this.descricao = descricao;
+    }
+
+    public String getSigla() {
+        return sigla;
+    }
+
+    public void setSigla(String sigla) {
+        this.sigla = sigla;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 }
