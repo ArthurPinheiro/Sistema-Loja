@@ -1,11 +1,9 @@
 package com.curso.spring.demomvc.domain;
 
-import lombok.*;
 import javax.persistence.*;
 import java.util.List;
 
 
-@Setter
 @Entity
 @Table(name = "CARGOS")
 public class Cargo extends AbstractEntity<Long> {
@@ -24,11 +22,25 @@ public class Cargo extends AbstractEntity<Long> {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
+    }
+
+
     public Departamento getDepartamento() {
         return departamento;
     }
 
     public List<Funcionario> getFuncionarios() {
         return funcionarios;
+    }
+
+
+    public void setFuncionarios(List<Funcionario> funcionarios) {
+        this.funcionarios = funcionarios;
     }
 }
